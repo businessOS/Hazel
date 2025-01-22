@@ -12,13 +12,12 @@ extern Hazel::Application* Hazel::CreateApplication();
 // this is the entry point of the application
 // When the client application return new Sandbox() class of type public Hazel::Application automatically execute this main function
 int main(int argc, char** argv) {
-    printf("Hazel Engine\n");
+    
+	Hazel::Log::Init();
 
-	// Hazel::Log::Init();
-
-    // HZ_CORE_WARN("Initialized Log!");
-	// int a = 5;
-    // HZ_INFO("Hello VAR={0}", a);
+    HZ_CORE_WARN("Initialized Log!");
+	int a = 5;
+    HZ_INFO("Hello VAR={0}", a);
 
     auto *app = Hazel::CreateApplication();
 
