@@ -1,6 +1,10 @@
 .vs/
 bin/
 bin-int/
+
+#files
+.user
+
 # Prerequisites
 *.d
 
