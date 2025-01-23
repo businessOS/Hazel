@@ -5,14 +5,16 @@
 
 #ifdef HZ_PLATFORM_WINDOWS
 
+#include <stdio.h>
+
 // this is used to declare the CreateApplication function that is implemented in the Sandbox project
 // with this (extern) we are telling the compiler that this function is implemented elsewhere
 extern Hazel::Application* Hazel::CreateApplication();
 
 // this is the entry point of the application
 // When the client application return new Sandbox() class of type public Hazel::Application automatically execute this main function
-int main(int argc, char** argv) {
-    
+int main(int argc, char** argv)
+{
 	Hazel::Log::Init();
 
     HZ_CORE_WARN("Initialized Log!");
