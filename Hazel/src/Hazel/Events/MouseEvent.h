@@ -94,5 +94,19 @@ namespace Hazel {
 		int m_Button;
 	};
 
+	class HAZEL_API MouseMovedEvent : public MouseEvent
+	{
+	public:
+		MouseMovedEvent(float x, float y)
+			: MouseEvent(x, y) {
+		}
+		std::string ToString() const override
+		{
+			std::stringstream ss;
+			ss << "MouseMovedEvent: " << GetX() << ", " << GetY();
+			return ss.str();
+		}
+		EVENT_CLASS_TYPE(MouseMoved)
+	};
 };
 
