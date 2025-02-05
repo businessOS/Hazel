@@ -43,19 +43,20 @@
     <ClInclude Include="src\Hazel\KeyCodes.h">
       <Filter>Hazel</Filter>
     </ClInclude>
+    <ClInclude Include="src\Hazel\Layer.h">
+      <Filter>Hazel</Filter>
+    </ClInclude>
     <ClInclude Include="src\Hazel\Log.h">
       <Filter>Hazel</Filter>
     </ClInclude>
     <ClInclude Include="src\Hazel\Window.h">
       <Filter>Hazel</Filter>
     </ClInclude>
+    <ClInclude Include="src\LayerStack.h" />
     <ClInclude Include="src\Plataform\Windows\WindowsWindow.h">
       <Filter>Plataform\Windows</Filter>
     </ClInclude>
     <ClInclude Include="src\hzpch.h" />
-    <ClInclude Include="src\Hazel\Layer.h">
-      <Filter>Hazel</Filter>
-    </ClInclude>
     <ClInclude Include="src\Hazel\LayerStack.h">
       <Filter>Hazel</Filter>
     </ClInclude>
@@ -64,16 +65,17 @@
     <ClCompile Include="src\Hazel\Application.cpp">
       <Filter>Hazel</Filter>
     </ClCompile>
+    <ClCompile Include="src\Hazel\Layer.cpp">
+      <Filter>Hazel</Filter>
+    </ClCompile>
     <ClCompile Include="src\Hazel\Log.cpp">
       <Filter>Hazel</Filter>
     </ClCompile>
+    <ClCompile Include="src\LayerStack.cpp" />
     <ClCompile Include="src\Plataform\Windows\WindowsWindow.cpp">
       <Filter>Plataform\Windows</Filter>
     </ClCompile>
     <ClCompile Include="src\hzpch.cpp" />
-    <ClCompile Include="src\Hazel\Layer.cpp">
-      <Filter>Hazel</Filter>
-    </ClCompile>
     <ClCompile Include="src\Hazel\LayerStack.cpp">
       <Filter>Hazel</Filter>
     </ClCompile>
