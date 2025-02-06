@@ -7,8 +7,10 @@ workspace "Hazel"
 	-- include directories relative to root folder (solution directory)
 	includeDir = {}
 	includeDir["GLFW"] = "Hazel/vendor/GLFW/include"
+	includeDir["Glad"] = "Hazel/vendor/Glad/include"
 
 	include "Hazel/vendor/GLFW/"
+	include "Hazel/vendor/Glad/"
 
 	project "Hazel"
 		location "Hazel"
@@ -30,11 +32,13 @@ workspace "Hazel"
 		includedirs {
 			"%{prj.name}/src",
 			"%{prj.name}/vendor/spdlog/include",
-			"%{includeDir.GLFW}"
+			"%{includeDir.GLFW}",
+			"%{includeDir.Glad}"
 		}
 
 		links {
 			"GLFW",
+			"Glad",
 			"opengl32.lib"
 		}
 			
