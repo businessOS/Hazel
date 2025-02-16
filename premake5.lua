@@ -8,9 +8,11 @@ workspace "Hazel"
 	includeDir = {}
 	includeDir["GLFW"] = "Hazel/vendor/GLFW/include"
 	includeDir["Glad"] = "Hazel/vendor/Glad/include"
+	includeDir["ImGui"] = "Hazel/vendor/ImGui"
 
-	include "Hazel/vendor/GLFW/"
-	include "Hazel/vendor/Glad/"
+	include "Hazel/vendor/GLFW"
+	include "Hazel/vendor/Glad"
+	include "Hazel/vendor/ImGui"
 
 	project "Hazel"
 		location "Hazel"
@@ -33,12 +35,14 @@ workspace "Hazel"
 			"%{prj.name}/src",
 			"%{prj.name}/vendor/spdlog/include",
 			"%{includeDir.GLFW}",
-			"%{includeDir.Glad}"
+			"%{includeDir.Glad}",
+			"%{includeDir.ImGui}"
 		}
 
 		links {
 			"GLFW",
 			"Glad",
+			"ImGui",
 			"opengl32.lib"
 		}
 			
