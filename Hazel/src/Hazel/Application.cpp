@@ -4,6 +4,7 @@
 #include "Hazel/Log.h"
 
 #include <GLFW/glfw3.h>
+#include "Input.h"
 
 namespace Hazel {
 
